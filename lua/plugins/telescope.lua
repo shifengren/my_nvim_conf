@@ -24,7 +24,7 @@ return {
         { '<leader>ff', "<cmd>lua require('telescope.builtin').find_files()<cr>" },
         { '<leader>fg', "<cmd>lua require('telescope.builtin').live_grep()<cr>" },
         { '<leader>fl', "<cmd>lua require('telescope.builtin').grep_string()<cr>" },
-        { '<leader>fh', "<cmd>lua require('telescope.builtin').help_tags()<cr>" },
+        { '<leader>ft', "<cmd>lua require('telescope.builtin').help_tags()<cr>" },
         { '<leader>fp', "<cmd>lua require('telescope.builtin').builtin()<cr>" },
         { '<leader>fm', "<cmd>lua require('telescope.builtin').marks()<cr>" },
         { '<leader>qf', "<cmd>lua require('telescope.builtin').quickfix()<cr>" },
