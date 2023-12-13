@@ -32,7 +32,12 @@ return {
             bashls = {},
             taplo = {},
             ruff_lsp = {},
-            clangd = {},
+            clangd = {
+                filetypes = { "h", "c", "cpp", "cc", "objc", "objcpp" },
+                cmd = { "clangd", "--background-index" },
+                single_file_support = true,
+           },
+            rust_analyzer = {}
         }
         local on_attach = function(_, bufnr)
             -- Enable completion triggered by <c-x><c-o>
