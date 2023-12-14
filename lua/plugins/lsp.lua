@@ -35,7 +35,7 @@ return {
             clangd = {
                 cmd = { "clangd", "--background-index" },
            },
-            ccls = {},
+            --ccls = {},
             rust_analyzer = {}
         }
         local on_attach = function(_, bufnr)
