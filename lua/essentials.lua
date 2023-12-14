@@ -63,3 +63,14 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 vim.keymap.set({ "v", "n" }, "<leader>y", "\"+y")
 
+
+--  file switch. uasually for cpp
+--  usage: 
+--  1. :e %:r.cpp
+--  2. :e %<.cpp
+--  explaination: 
+--  1. `:r` (root) filename modifier which removes the last extension. check `:help filename-modifiers` for more info
+--  2. `%<` mean current file name without extension.  check `:h extension-removal` for more info
+--  lsp related method: 
+--  1. :ClangdSwitchSourceHeader . which depends on lsp server & compile_commands.json. see more in 'lspconfig/server_configurations/clangd.lua'
+
