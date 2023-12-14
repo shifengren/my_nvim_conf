@@ -49,6 +49,15 @@ vim.keymap.set("n", "<Tab>", "<cmd>bn<CR>")
 vim.keymap.set("n", "<S-Tab>", "<cmd>bp<CR>")
 vim.keymap.set("n", "<leader>bc", "<cmd>bd<CR>")
 
+-- Clear search with <esc>
+vim.keymap.set({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>")
+-- save file
+vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>")
+
+-- better indenting
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
+
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 

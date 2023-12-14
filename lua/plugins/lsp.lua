@@ -33,10 +33,9 @@ return {
             taplo = {},
             ruff_lsp = {},
             clangd = {
-                filetypes = { "h", "c", "cpp", "cc", "objc", "objcpp" },
                 cmd = { "clangd", "--background-index" },
-                single_file_support = true,
            },
+            ccls = {},
             rust_analyzer = {}
         }
         local on_attach = function(_, bufnr)
