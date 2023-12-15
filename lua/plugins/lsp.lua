@@ -12,6 +12,7 @@ return {
             tag = "v1.0.0",
         },
         "nvimdev/lspsaga.nvim",
+        "simrat39/rust-tools.nvim",
 
     },
     config = function()
@@ -74,6 +75,7 @@ return {
         require("neodev").setup()
         require("fidget").setup()
         require("lspsaga").setup()
+        require("rust-tools").setup()
         require("mason").setup()
         local capabilities = require('cmp_nvim_lsp').default_capabilities()
         require("mason-lspconfig").setup({
