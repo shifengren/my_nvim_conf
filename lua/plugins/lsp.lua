@@ -34,9 +34,11 @@ return {
             ruff_lsp = {},
             clangd = {
                 cmd = { "clangd", "--background-index" },
-           },
+            },
             --ccls = {},
-            rust_analyzer = {}
+            rust_analyzer = {},
+            jdtls = {},
+            gopls = {},
         }
         local on_attach = function(_, bufnr)
             -- Enable completion triggered by <c-x><c-o>
