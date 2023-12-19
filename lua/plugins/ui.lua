@@ -16,6 +16,10 @@ return {
         config = true,
     },
     {
+        "sindrets/diffview.nvim",
+         cmd = { "DiffviewOpen", "DiffviewClose", "DiffviewToggleFiles", "DiffviewFocusFiles" },
+    },
+    {
         "goolord/alpha-nvim",
         config = function()
             require 'alpha'.setup(require 'alpha.themes.dashboard'.config)
